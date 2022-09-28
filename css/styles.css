@@ -123,6 +123,7 @@ button{
 }
 
 .contact-link{
+    display: block;
     padding: 32px 0;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -150,7 +151,15 @@ button{
  .header-list{
     display: flex;
     margin-left: auto;
- }   
+ }  
+ .icons-contact{
+    fill: currentColor;
+    margin-right: 10px;
+ }
+ .tumb-header{
+    display: flex;
+ }
+ 
 /*                                                  секція "Герой"  */
 
 .hero{
@@ -209,6 +218,7 @@ button{
     border-radius: 4px;
     border: none;
     margin-bottom: 30px;
+    padding: 25px 100px;
 }
 
 .benefits .title{
@@ -298,13 +308,24 @@ button{
     margin-top: 16px;
     justify-content: center;
 }
-.network-item{
+
+.network-link{
     width: 44px;
     height: 44px;
     border-radius: 50%;
     cursor: pointer;
+    padding: 12px;
+    color: var(--border-color);
+}
 
-    outline: 2px solid red;
+.network-link:hover,
+.network-link:focus{
+    background-color: var(--contrast-color);
+    color: var(--secondary-color);
+}
+
+.icon-network{
+    fill: currentColor;
 }
 
 /*                                          Постійні клієнти    */
@@ -330,6 +351,23 @@ button{
     cursor: pointer;
 }
 
+.clients-link{
+    padding: 16px 32px;
+    color: var(--border-color);
+}
+.icon-client{
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+    color: var(--contrast-color);
+}
+.clients-item:hover,
+.clients-item:focus {
+    color: var(--contrast-color);
+    border: 1px solid var(--contrast-color);
+}
 /*                                            Футер  */
 
 .footer{
@@ -398,8 +436,15 @@ button{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+    padding: 12px;
 }
-
+.footer-item:hover,
+.footer-item:focus{
+    background-color: var(--contrast-color);
+}
+.icon-footer{
+    fill: var(--secondary-color);
+}
 /*                                       секція "Портфоліо"  */
 
 .filtr-btn {
@@ -476,3 +521,4 @@ button{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
