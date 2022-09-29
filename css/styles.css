@@ -419,9 +419,9 @@ button{
 }
 .forma{
     display: flex;
+    align-items: baseline;
 }
 .footer-text{
-    margin-top: 12px;
     margin-bottom: 20px;
 
     font-weight: 700;
